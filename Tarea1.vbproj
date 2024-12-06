@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType> <!-- Aplicación de Windows -->
+    <TargetFramework>net8.0-windows</TargetFramework> <!-- Cambia la versión de .NET si es necesario -->
+    <UseWPF>false</UseWPF> <!-- Desactiva WPF si no se usa -->
+    <UseWindowsForms>true</UseWindowsForms> <!-- Activa Windows Forms -->
+    <StartupObject>Tarea1.Main</StartupObject> <!-- El punto de entrada -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineDebug>false</DefineDebug>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Agrega más archivos .vb según sea necesario -->
+  </ItemGroup>
+
+</Project>
